@@ -1,12 +1,15 @@
 package Device;
 
 public class Device {
+	
 	//this is the device driver
 	//most devices should have a name and an ID
-	private String name,ID;
-	public Device(String name, String ID) {
+	
+	private String name, id;
+	
+	public Device(String name, String id) {
 		this.name = name;
-		this.ID = ID;
+		this.id = id;
 	}
 	
 	
@@ -14,15 +17,18 @@ public class Device {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public void setID(String ID) {
-		this.ID = ID;
+	
+	public void setID(String id) {
+		this.id = id;
 	}
 	
 	//getter methods
 	public String getName() {
 		return this.name;
 	}
-	public String getID() {
-		return this.name;
+	
+	public String getId() {
+		return this.id;
 	}
+	
 }
